@@ -1,0 +1,46 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <!-- Timecard section -->
+        <div class="timecard">
+            
+            <!-- Home score -->
+            <div class="score-section">
+                <h3>HOME</h3>
+                <div class="score-area">
+                    <p class="score-count" id="home-score"></p>
+                </div>
+                <div class="score-additions">
+                    <p class="score-addition" onclick="addOne()">+1</p>
+                    <p class="score-addition" onclick="addTwo()">+2</p>
+                    <p class="score-addition" onclick="addThree()">+3</p>
+                </div>
+            </div>
+            
+            <!-- Guest score -->
+            <div class="score-section">
+                <h3>GUEST</h3>
+                <div class="score-area">
+                    <p class="score-count" id="guest-score"></p>
+                </div>
+                <div class="score-additions">
+                    <p class="score-addition" onclick="addOneGuest()">+1</p>
+                    <p class="score-addition" onclick="addTwoGuest()">+2</p>
+                    <p class="score-addition" onclick="addThreeGuest()">+3</p>
+                </div>
+            </div>
+
+        </div> 
+        <!-- End:Timecard section  -->
+        
+        <!-- Reset score -->
+        <div class="reset-section">
+            <button class="reset-button" onclick="resetScore()">Reset score</button>
+        </div>
+        
+        
+        <script src="index.js"></script>
+    </body>
+</html>
